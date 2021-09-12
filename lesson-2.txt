@@ -1,6 +1,13 @@
 Microsoft Windows [Version 10.0.19042.1165]
 (c) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
 
+C:\Users\solom> mysql_config_editor set
+
+C:\Users\solom>mysql_config_editor set --login-path=client --host=localhost --user=root --password
+Enter password: *********
+WARNING : 'client' path already exists and will be overwritten.
+ Continue? (Press y|Y for Yes, any other key for No) : y
+
 C:\Users\solom>mysql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 11
