@@ -1,0 +1,30 @@
+Задание: Повторить все действия CRUD.
+
+
+Create database bakery;
+use bakery;
+
+create table test_1(
+id int auto_increment not null primary key,
+product_name varchar(200) not null, 
+price numeric (18, 2)
+);
+SELECT * FROM test_1;
+
+insert into test_1 (product_name, price)
+values ('пирожок', 10),
+('булочка', 20),
+('круассан', 30);
+
+SELECT * FROM test_1;
+
+UPDATE test_1 SET price = price + 10 
+where id > 0;
+
+SELECT * FROM test_1;
+
+DELETE FROM test_1 WHERE id =3;
+
+SELECT * FROM test_1;
+
+drop database bakery;
